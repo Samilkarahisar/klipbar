@@ -1,0 +1,6 @@
+framework module Pods_klipbar {
+  umbrella header "Pods-klipbar-umbrella.h"
+
+  export *
+  module * { export * }
+}
