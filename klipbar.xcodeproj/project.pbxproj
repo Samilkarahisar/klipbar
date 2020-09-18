@@ -12,12 +12,33 @@
 		C2E3CB57213881FE005BC3C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E3CB56213881FE005BC3C4 /* Assets.xcassets */; };
 		C2E3CB5A213881FE005BC3C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E3CB58213881FE005BC3C4 /* Main.storyboard */; };
 		C2E3CB63213887D5005BC3C4 /* KlipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E3CB62213887D5005BC3C4 /* KlipViewController.swift */; };
-		E8D6C0DF68A7D7E7DED74447 /* Pods_klipbar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9ADEF684107C1F6136E68FC /* Pods_klipbar.framework */; };
+		E14D5147249AAC7400430B87 /* LaunchAtLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14D5144249AAC7400430B87 /* LaunchAtLogin.framework */; };
+		E14D5148249AAC7400430B87 /* LaunchAtLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14D5144249AAC7400430B87 /* LaunchAtLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E14D5149249AAC7400430B87 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14D5145249AAC7400430B87 /* SwiftyJSON.framework */; };
+		E14D514A249AAC7400430B87 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14D5145249AAC7400430B87 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E14D514B249AAC7400430B87 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14D5146249AAC7400430B87 /* Alamofire.framework */; };
+		E14D514C249AAC7400430B87 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14D5146249AAC7400430B87 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E1EE720524C272F60094C50A /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EE720424C272F60094C50A /* SearchController.swift */; };
+		E1EE720724C28C590094C50A /* DataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EE720624C28C590094C50A /* DataContainer.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E14D514D249AAC7400430B87 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E14D514A249AAC7400430B87 /* SwiftyJSON.framework in Embed Frameworks */,
+				E14D514C249AAC7400430B87 /* Alamofire.framework in Embed Frameworks */,
+				E14D5148249AAC7400430B87 /* LaunchAtLogin.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		994AF86AA78AFF1EC4E3FA90 /* Pods-klipbar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klipbar.release.xcconfig"; path = "Pods/Target Support Files/Pods-klipbar/Pods-klipbar.release.xcconfig"; sourceTree = "<group>"; };
-		B9ADEF684107C1F6136E68FC /* Pods_klipbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_klipbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E3CB4F213881FD005BC3C4 /* klipbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = klipbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E3CB52213881FD005BC3C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2E3CB54213881FD005BC3C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,7 +47,11 @@
 		C2E3CB5B213881FE005BC3C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2E3CB5C213881FE005BC3C4 /* klipbar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = klipbar.entitlements; sourceTree = "<group>"; };
 		C2E3CB62213887D5005BC3C4 /* KlipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlipViewController.swift; sourceTree = "<group>"; };
-		D352405FBCE8DEA1B2AEB7D3 /* Pods-klipbar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klipbar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-klipbar/Pods-klipbar.debug.xcconfig"; sourceTree = "<group>"; };
+		E14D5144249AAC7400430B87 /* LaunchAtLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LaunchAtLogin.framework; path = Carthage/Build/Mac/LaunchAtLogin.framework; sourceTree = "<group>"; };
+		E14D5145249AAC7400430B87 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
+		E14D5146249AAC7400430B87 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
+		E1EE720424C272F60094C50A /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		E1EE720624C28C590094C50A /* DataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8D6C0DF68A7D7E7DED74447 /* Pods_klipbar.framework in Frameworks */,
+				E14D5149249AAC7400430B87 /* SwiftyJSON.framework in Frameworks */,
+				E14D514B249AAC7400430B87 /* Alamofire.framework in Frameworks */,
+				E14D5147249AAC7400430B87 /* LaunchAtLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,8 +73,7 @@
 			children = (
 				C2E3CB51213881FD005BC3C4 /* klipbar */,
 				C2E3CB50213881FD005BC3C4 /* Products */,
-				F43174DE34532A05FD1DD6AF /* Pods */,
-				E753F0D7825DF832C5937727 /* Frameworks */,
+				E14D5143249AAC7400430B87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,31 +89,26 @@
 			isa = PBXGroup;
 			children = (
 				C2E3CB52213881FD005BC3C4 /* AppDelegate.swift */,
+				E1EE720424C272F60094C50A /* SearchController.swift */,
 				C2E3CB62213887D5005BC3C4 /* KlipViewController.swift */,
 				C2E3CB54213881FD005BC3C4 /* ViewController.swift */,
 				C2E3CB56213881FE005BC3C4 /* Assets.xcassets */,
 				C2E3CB58213881FE005BC3C4 /* Main.storyboard */,
 				C2E3CB5B213881FE005BC3C4 /* Info.plist */,
 				C2E3CB5C213881FE005BC3C4 /* klipbar.entitlements */,
+				E1EE720624C28C590094C50A /* DataContainer.swift */,
 			);
 			path = klipbar;
 			sourceTree = "<group>";
 		};
-		E753F0D7825DF832C5937727 /* Frameworks */ = {
+		E14D5143249AAC7400430B87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B9ADEF684107C1F6136E68FC /* Pods_klipbar.framework */,
+				E14D5146249AAC7400430B87 /* Alamofire.framework */,
+				E14D5144249AAC7400430B87 /* LaunchAtLogin.framework */,
+				E14D5145249AAC7400430B87 /* SwiftyJSON.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F43174DE34532A05FD1DD6AF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D352405FBCE8DEA1B2AEB7D3 /* Pods-klipbar.debug.xcconfig */,
-				994AF86AA78AFF1EC4E3FA90 /* Pods-klipbar.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,12 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2E3CB5F213881FE005BC3C4 /* Build configuration list for PBXNativeTarget "klipbar" */;
 			buildPhases = (
-				98D1052E8DD0FF738391FB66 /* [CP] Check Pods Manifest.lock */,
 				C2E3CB4B213881FD005BC3C4 /* Sources */,
 				C2E3CB4C213881FD005BC3C4 /* Frameworks */,
 				C2E3CB4D213881FD005BC3C4 /* Resources */,
-				C28C5D98213FEDAB008EACFA /* ShellScript */,
-				21E00973EBA5EBF0C14AA9F6 /* [CP] Embed Pods Frameworks */,
+				E14D5142249AA98D00430B87 /* ShellScript */,
+				E14D514D249AAC7400430B87 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,11 +140,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Ferruccio Balestreri";
 				TargetAttributes = {
 					C2E3CB4E213881FD005BC3C4 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1150;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -164,7 +185,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		21E00973EBA5EBF0C14AA9F6 /* [CP] Embed Pods Frameworks */ = {
+		E14D5142249AA98D00430B87 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -172,58 +193,18 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-klipbar/Pods-klipbar-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/LaunchAtLogin/LaunchAtLogin.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/LaunchAtLogin.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/SwiftyJSON.framework",
 			);
-			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LaunchAtLogin.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-klipbar/Pods-klipbar-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		98D1052E8DD0FF738391FB66 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-klipbar-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C28C5D98213FEDAB008EACFA /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = "/Users/ferruccio/Documents/GitHub/klipbar/Pods/LaunchAtLogin/LaunchAtLogin/copy-helper.sh";
-			shellScript = "";
+			shellPath = /bin/bash;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -235,6 +216,8 @@
 				C2E3CB55213881FD005BC3C4 /* ViewController.swift in Sources */,
 				C2E3CB63213887D5005BC3C4 /* KlipViewController.swift in Sources */,
 				C2E3CB53213881FD005BC3C4 /* AppDelegate.swift in Sources */,
+				E1EE720524C272F60094C50A /* SearchController.swift in Sources */,
+				E1EE720724C28C590094C50A /* DataContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,36 +350,45 @@
 		};
 		C2E3CB60213881FE005BC3C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D352405FBCE8DEA1B2AEB7D3 /* Pods-klipbar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = klipbar/klipbar.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4L357YX783;
+				DEVELOPMENT_TEAM = 4T2Y6Z4MR2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = klipbar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = klipped.in.klipbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		C2E3CB61213881FE005BC3C4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 994AF86AA78AFF1EC4E3FA90 /* Pods-klipbar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = klipbar/klipbar.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4L357YX783;
+				DEVELOPMENT_TEAM = 4T2Y6Z4MR2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = klipbar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -405,7 +397,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = klipped.in.klipbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

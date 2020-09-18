@@ -7,10 +7,11 @@
 //
 
 import Cocoa
-import LaunchAtLogin
+
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
+    
     @IBOutlet weak var StatusMenu: NSMenu!
     
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
@@ -24,12 +25,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        LaunchAtLogin.isEnabled = true
+       
         if let button = statusItem.button {
-            button.image = NSImage(named:NSImage.Name("StatusBarButtonImage"))
+            button.image = NSImage(named:"StatusBarButtonImage")
             button.action = #selector(togglePopover(_:))
         }
-        popover.contentViewController = KlipViewController.freshController()
+      
+            popover.contentViewController = SearchController.freshController()
+        
+       
     }
     
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -47,6 +51,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func showPopover(sender: Any?) {
         if let button = statusItem.button {
             popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
+            if let someString = DataContainer.shared.someString {
+                                           print("DEJA PRESENT room: =>" + someString);
+                                     popover.contentViewController = KlipViewController.freshController()
+            }
         }
     }
     
